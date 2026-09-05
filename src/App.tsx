@@ -140,7 +140,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1>🎬 MSK Downloader</h1>
+        <h1>📥 Sk-IDM</h1>
         <p>Descargá playlists de YouTube o mandalas directo a IDM</p>
       </header>
 

@@ -160,9 +160,18 @@ async fn resolve_single_link(yt_dlp: &str, video_url: &str) -> Result<String, St
     ];
     for fmt in formats {
         let mut cmd = TokioCommand::new(yt_dlp);
-        cmd.args(["-f", fmt, "-g", "--no-warnings", "--no-playlist", video_url])
-            .stdout(Stdio::piped())
-            .stderr(Stdio::null());
+        cmd.args([
+            "-f",
+            fmt,
+            "-g",
+            "--no-warnings",
+            "--no-playlist",
+            "--extractor-args",
+            "youtube:player_client=android,web",
+            video_url,
+        ])
+        .stdout(Stdio::piped())
+        .stderr(Stdio::null());
         #[cfg(windows)]
         cmd.creation_flags(CREATE_NO_WINDOW);
 

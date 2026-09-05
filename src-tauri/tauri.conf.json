@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "MSK Downloader",
+  "productName": "Sk-IDM",
   "version": "1.0.0",
-  "identifier": "com.msk.downloader",
+  "identifier": "com.skidm.app",
   "build": {
     "beforeDevCommand": "npm run dev",
     "beforeBuildCommand": "npm run build",
@@ -13,11 +13,11 @@
     "windows": [
       {
         "label": "main",
-        "title": "MSK Downloader",
+        "title": "Sk-IDM",
         "width": 900,
-        "height": 720,
+        "height": 820,
         "minWidth": 700,
-        "minHeight": 520
+        "minHeight": 560
       }
     ],
     "security": {
@@ -26,7 +26,7 @@
   },
   "bundle": {
     "active": true,
-    "targets": ["nsis", "msi"],
+    "targets": ["nsis"],
     "icon": [
       "icons/32x32.png",
       "icons/128x128.png",

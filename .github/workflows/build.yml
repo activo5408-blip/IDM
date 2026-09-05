@@ -31,10 +31,8 @@ jobs:
       - name: Build app (frontend + Tauri)
         run: npx tauri build
 
-      - name: Upload installers
+      - name: Upload installer
         uses: actions/upload-artifact@v4
         with:
-          name: MSK-Downloader-Windows-Installers
-          path: |
-            src-tauri/target/release/bundle/nsis/*.exe
-            src-tauri/target/release/bundle/msi/*.msi
+          name: MSK-Downloader-Windows-Installer
+          path: src-tauri/target/release/bundle/nsis/*.exe

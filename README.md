@@ -1,4 +1,4 @@
-# MSK Downloader — versión Tauri + React
+# Sk-IDM — versión Tauri + React
 
 Reescritura de la app en Tauri (backend en Rust) + React, con el mismo
 flujo que ya veníamos usando: buscar capítulos de una playlist de YouTube
